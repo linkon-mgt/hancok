@@ -1,0 +1,69 @@
+/* =========================================================
+|   |   |   |   |   navbar css start  |   |   |   |   |   |   
+============================================================*/
+.navbar {
+    @include pgap(25px, 25px, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .navbar-brand {
+        @include pgap(0, 0, 0, 0);
+    }
+
+    .navbar-nav {
+        .nav-item {
+            @include pgap(0, 0, 15px, 15px);
+            &:hover{
+                .nav-link{
+                    &::after{
+                        height: 4px
+                    }
+                }
+            }
+
+            .nav-link {
+                @include pgap(0, 0, 0, 0);
+                @include font('Oswald', 16px, 400, $nav);
+                text-transform: capitalize;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -15px;
+                    width: 100%;
+                    height: 0;
+                    background: #FF4655;
+                    transform-origin: bottom;
+                    transition: all linear .2s;
+                }
+                .sign-in{
+                    margin-left: 5px;
+                }
+
+            }
+        }
+    }
+
+    .navbar-item1 {
+        margin-left: 45px;
+    }
+
+    .navbar-item2 {
+        .nav-item {
+            &:last-child {
+                padding-right: 0;
+            }
+            .nav-link{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* =========================================================
+|   |   |   |   |   navbar css end  |   |   |   |   |   |   
+============================================================*/

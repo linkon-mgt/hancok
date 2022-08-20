@@ -1,0 +1,110 @@
+/* =========================================================
+|   |   |   |   |   footer css start  |   |   |   |   |   |   
+============================================================*/
+#footer {
+    padding: 130px 0 25px 0;
+    background: #191919;
+
+    .footer-content {
+        padding-bottom: 80px;
+        border-bottom: 1px solid #666666;
+        .footer-item1 {
+            a {
+                @include font('Barlow Condensed', 35px, 700, $normal);
+                line-height: 42px;
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+                margin-bottom: 30px;
+
+                span {
+                    font-size: 50px !important;
+                    color: $hoverbg !important;
+                }
+            }
+
+            p {
+                @include font('Oswald', 16px, 400, #666);
+                line-height: 23px;
+                text-transform: uppercase;
+                padding-right: 78px;
+                padding-top: 50px;
+            }
+            .footer-icon{
+                column-gap: 10px;
+                margin-top: 60px;
+                text-align: center;
+                align-items: end;
+                justify-content: start;
+                a{
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: #212529;
+                    color: $normal;
+                    font-size: 22px;
+                    line-height: 50px;
+                    transition: all linear 0.3s;
+                }
+            }
+        }
+        .footer-item2{
+            margin-top: 18px;
+            h4{
+                @include font('Barlow Condensed', 25px, 600, $normal);
+                line-height: 30px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            a{
+                @include font('Oswald', 16px, 400, #666);
+                line-height: 23px;
+                margin-top: 30px;
+                display: block;
+                transition: all linear 0.3s;
+                &:hover{
+                    color: $hoverbg;
+                }
+            }
+
+        }
+        .footer-item3{
+            margin-top: 18px;
+            h4{
+                @include font('Barlow Condensed', 25px, 600, $normal);
+                line-height: 30px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            a{
+                @include font('Oswald', 16px, 400, #666);
+                line-height: 23px;
+                margin-top: 30px;
+                display: block;
+                transition: all linear 0.3s;
+                &:hover{
+                    color: $hoverbg;
+                }
+            }
+
+        }
+        .footer-item4{
+            margin-top: 18px;
+            h4{
+                @include font('Barlow Condensed', 25px, 600, $normal);
+                line-height: 30px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-left: -10px;
+            }
+            .gallery-item{
+                margin: 3px;
+            }
+        }
+    }
+
+}
+
+/* =========================================================
+|   |   |   |   |   footer css end  |   |   |   |   |   |   
+============================================================*/

@@ -1,0 +1,36 @@
+/* =========================================================
+|   |   |   |   |   common css start  |   |   |   |   |   |   
+============================================================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 0.8;
+}
+img{
+    vertical-align: middle;
+}
+html,body{
+    overflow-x: hidden;
+}
+/* =========================================================
+|   |   |   |   |   common css end  |   |   |   |   |   |   
+============================================================*/

@@ -1,0 +1,107 @@
+/* =========================================================
+|   |   |   |   |   team css start  |   |   |   |   |   |   
+============================================================*/
+#team {
+    @include pgap(100px, 100px, 0, 0);
+    background: #191919;
+
+    .team-header {
+        text-align: right;
+        margin-bottom: 50px;
+
+        h3 {
+            @include font('Barlow Condensed', 38px, 600, $normal);
+            text-transform: uppercase;
+            line-height: 45px;
+            letter-spacing: 3px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 95px;
+                bottom: 11px;
+                width: 110px;
+                height: 3px;
+                background: $hoverbg;
+            }
+        }
+    }
+
+    .team-item {
+        .team-img-content {
+            .team-img {
+                position: relative;
+                overflow: hidden;
+                img{
+                    filter: grayscale(100%);
+                    transition: all linear 0.3s;
+                }
+
+                .team-text-content {
+                    background: rgba(37, 36, 36, 0.34);
+                    padding: 35px 30px 30px 30px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -146px;
+                    width: 100%;
+                    z-index:9;
+                    transition: all linear 0.3s;
+                    h4 {
+                        @include font('Barlow Condensed', 30px, 600, $normal);
+                        line-height: 36px;
+                        margin-bottom: 15px;
+                        text-transform: uppercase;
+                    }
+
+                    .team-last-text {
+                        p {
+                            @include font('Oswald', 16px, 400, $normal);
+                            line-height: 23px;
+                            padding-right: 10px;
+                        }
+                    }
+
+                    .team-btn {
+                        a {
+                            display: inline-block;
+                            @include font('Oswald', 16px, 400, $normal);
+                            line-height: 23.71px;
+                            padding: 6px 20px;
+                            background: $hoverbg;
+                            margin-top: 15px;
+                        }
+                    }
+
+                    .team-icon {
+                        a {
+                            display: inline-block;
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            background: $hoverbg;
+                            margin: 20px 10px 0 10px;
+                            color: $normal;
+                            line-height: 35px;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .team-img{
+                img{
+                    filter: grayscale(0%);
+                }
+                .team-text-content{
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+/* =========================================================
+|   |   |   |   |   team css end  |   |   |   |   |   |   
+============================================================*/

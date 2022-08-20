@@ -1,0 +1,24 @@
+/* =========================================================
+|   |   |   |   |   copyright css start  |   |   |   |   |   |   
+============================================================*/
+#copy {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background: #191919;
+
+    .copy-right {
+        h4 {
+            @include font('Barlow Condensed', 20px, 400, $normal);
+            line-height: 24px;
+
+            a {
+                @include font('Barlow Condensed', 20px, 400, $hoverbg);
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+/* =========================================================
+|   |   |   |   |   copyright css end  |   |   |   |   |   |   
+============================================================*/

@@ -1,0 +1,166 @@
+/* =========================================================
+|   |   |   |   |   question css start  |   |   |   |   |   |   
+============================================================*/
+#question {
+    padding: 55px 0 200px 0;
+    background: #121212;
+
+    .ques-cont {
+        position: relative;
+
+        .ques-header {
+            margin-bottom: 92px;
+
+            h3 {
+                @include font('Barlow Condensed', 38px, 600, $normal);
+                line-height: 56px !important;
+                letter-spacing: 3px !important;
+                text-transform: uppercase !important;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    right: 180px;
+                    bottom: 7px;
+                    background: $hoverbg;
+                    height: 3px;
+                    width: 105px;
+                    animation: stream_head 1s infinite;
+                    -webkit-animation: question-head 1s infinite;
+
+                    @keyframes question-head {
+                        0% {
+                            background: #fff;
+                        }
+
+                        100% {
+                            background: $hoverbg;
+                        }
+                    }
+                }
+
+                .typed7-text {
+                    @include font('Barlow Condensed', 38px, 600, $hoverbg);
+                    letter-spacing: 3px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    padding-right: 40px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .ques-content {
+            position: relative;
+
+            .ques-item {
+                .ques-shape {
+                    width: 70px;
+                    height: 70px;
+                    background: $hoverbg;
+                    margin-top: 7px;
+
+                    h4 {
+                        @include font('Barlow Condensed', 38px, 600, $normal);
+                        line-height: 45px;
+                        letter-spacing: 3px;
+                    }
+                }
+
+                .ques-text {
+                    a {
+                        display: inline-block;
+                        @include font('Barlow Condensed', 22px, 600, $normal);
+                        line-height: 26.4px;
+                        margin-bottom: 10px;
+                        transition: all linear 0.3s;
+
+                        &:hover {
+                            color: $hoverbg;
+                        }
+                    }
+
+                    p {
+                        @include font('Barlow Condensed', 16px, 400, #666);
+                        line-height: 23.71px;
+                    }
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 49.9%;
+                width: 100%;
+                height: 1px;
+                background: #666666;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 49.9%;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background: #666666;
+            }
+        }
+
+        .ques-search {
+            padding: 35px 16px 35px 30px;
+            background: $hoverbg;
+            position: absolute;
+            left: 0;
+            bottom: -285px;
+
+            .ques-search-text {
+                h3 {
+                    @include font('Barlow Condensed', 40px, 600, $normal);
+                    line-height: 48px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .search-box {
+                position: relative;
+
+                input {
+                    @include font('Barlow Condensed', 16px, 500, $normal);
+                    width: 410px;
+                    height: 40px;
+                    background: $normalbg;
+                    border-radius: 30px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    padding: 11px 0 11px 20px;
+                    color: #666666;
+                    outline: none;
+                    border: none;
+                }
+
+                .btn-ques {
+                    button {
+                        @include font('Barlow Condensed', 16px, 500, $normal);
+                        height: 40px;
+                        width: 117px;
+                        background: #191919;
+                        border-radius: 30px;
+                        line-height: 19px;
+                        text-transform: uppercase;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* =========================================================
+|   |   |   |   |   question css end  |   |   |   |   |   |   
+============================================================*/

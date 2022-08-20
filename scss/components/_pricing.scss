@@ -1,0 +1,250 @@
+/* =========================================================
+|   |   |   |   |   pricing css start  |   |   |   |   |   |   
+============================================================*/
+#pricing {
+    padding: 90px 0;
+    background: #191919;
+
+    .pricing-header {
+        text-align: right;
+        margin-bottom: 48px;
+
+        h3 {
+            @include font('Barlow Condensed', 38px, 600, $normal);
+            text-transform: uppercase;
+            line-height: 45px;
+            letter-spacing: 3px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 95px;
+                bottom: 11px;
+                width: 110px;
+                height: 3px;
+                background: $hoverbg;
+            }
+        }
+    }
+
+    .pricing-slider {
+        .pricing-item {
+            margin: 0 10px;
+
+            .pricing-img {
+                position: relative;
+
+                .pricing-item-shape {
+                    padding: 15px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 20%;
+                    transition: all linear 0.3s;
+
+                    a {
+                        display: inline-block;
+                        color: #fff;
+                        width: 30px;
+                        height: 30px;
+                        background: #212121;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        opacity: 0;
+                        transition: all linear 0.3s;
+                    }
+                }
+
+                .bg-content {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 0;
+                    width: 100%;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
+                    transition: all linear 0.2s;
+                }
+            }
+
+            .pricing-text {
+                margin-top: 18px;
+
+                h3 {
+                    @include font('Barlow Condensed', 22px, 600, $normal);
+                    line-height: 26px;
+                    letter-spacing: 1px;
+                }
+
+                h4 {
+                    @include font('Oswald', 16px, 400, #666);
+                    line-height: 23px;
+                    letter-spacing: 2px;
+                    margin-top: 20px;
+                }
+
+                h5 {
+                    @include font('Oswald', 14px, 400, $normal);
+                    margin-top: 20px;
+                    line-height: 20px;
+
+                    .box {
+                        padding: 4px 4px 5px 4px;
+                        background: $hoverbg;
+                        letter-spacing: 1px;
+                        color: #fff !important;
+                    }
+
+                    .commission {
+                        font-size: 16px !important;
+                        color: #666666 !important;
+                        line-height: 23.71px !important;
+                        letter-spacing: 1.5px;
+                        margin-left: 10px;
+                        text-decoration-line: line-through;
+                    }
+
+                    .rate {
+                        font-size: 16px !important;
+                        color: #fff !important;
+                        line-height: 23.71px !important;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            &:hover {
+                .pricing-img {
+                    .bg-content {
+                        height: 80%;
+                    }
+
+                    .pricing-item-shape {
+                        a {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .swipe-header {
+        h4 {
+            @include font('Barlow Condensed', 20px, 500, $normal);
+            line-height: 24px;
+            margin-top: 60px;
+        }
+    }
+
+    .game-slider {
+        padding: 42px 111px 42px 44px;
+        background: #212121;
+        margin-top: 30px;
+
+        .game-text {
+            h4 {
+                @include font('Oswald', 16px, 500, #bcbcbc);
+                line-height: 23px;
+                letter-spacing: 1px;
+                position: relative;
+                margin-top: 3px;
+
+                .typed5-text {
+                    @include font('Oswald', 16px, 500, $hoverbg);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    line-height: 23px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            h3 {
+                @include font('Barlow Condensed', 38px, 600, $normal);
+                line-height: 45px;
+                text-transform: uppercase;
+                margin-top: 15px;
+            }
+
+            p {
+                @include font('Oswald', 16px, 600, #666);
+                line-height: 23px;
+                margin-top: 15px;
+                padding-right: 40px;
+            }
+
+            a {
+                display: inline-block;
+                @include font('Oswald', 16px, 500, $normal);
+                padding: 13px 31px;
+                background: #121212;
+                margin-top: 25px;
+                line-height: 23.71px;
+                position: relative;
+                overflow-x: hidden;
+                z-index: 1;
+                transition: all linear 0.3s;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: -164px;
+                    top: 0;
+                    width: 155px;
+                    height: 100%;
+                    background: $hoverbg;
+                    transform: skewX(-20deg);
+                    transition: all linear 0.3s;
+                    z-index: -1;
+                }
+
+                &:hover {
+                    color: #fff;
+
+                    &::after {
+                        left: -10px;
+                    }
+                }
+            }
+        }
+
+        .poster-main {
+            position: relative;
+            margin-left: auto;
+
+            .poster-list {
+                .poster-item {
+                    opacity: 1 !important;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+
+                    img {
+                        border-radius: 5px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .poster-btn {
+                position: absolute;
+                top: 0;
+                cursor: pointer;
+            }
+
+            .poster-prev-btn {
+                left: 0;
+            }
+
+            .poster-next-btn {
+                right: 0;
+            }
+        }
+    }
+}
+/* =========================================================
+|   |   |   |   |   pricing css end  |   |   |   |   |   |   
+============================================================*/

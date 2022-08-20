@@ -1,0 +1,1595 @@
+/* =========================================================
+|   |   |   |   |   common css start  |   |   |   |   |   |   
+============================================================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+}
+
+img {
+  vertical-align: middle;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* =========================================================
+|   |   |   |   |   common css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   navbar css start  |   |   |   |   |   |   
+============================================================*/
+.navbar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 0;
+  padding-right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar .navbar-nav .nav-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar .navbar-nav .nav-item:hover .nav-link::after {
+  height: 4px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ddd;
+  text-transform: capitalize;
+  position: relative;
+}
+.navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 0;
+  background: #FF4655;
+  transform-origin: bottom;
+  transition: all linear 0.2s;
+}
+.navbar .navbar-nav .nav-item .nav-link .sign-in {
+  margin-left: 5px;
+}
+.navbar .navbar-item1 {
+  margin-left: 45px;
+}
+.navbar .navbar-item2 .nav-item:last-child {
+  padding-right: 0;
+}
+.navbar .navbar-item2 .nav-item .nav-link::after {
+  display: none;
+}
+
+/* =========================================================
+|   |   |   |   |   navbar css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   banner css start  |   |   |   |   |   |   
+============================================================*/
+#banner {
+  background: url(../images/banner.jpg) no-repeat center/cover;
+  padding-top: 330px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#banner .banner_content h2 {
+  font-family: "Oswald";
+  font-size: 27px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  line-height: 40px;
+}
+#banner .banner_content h1 {
+  font-family: "Oswald";
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  position: relative;
+  line-height: 88px;
+  margin-left: -3px;
+  position: relative;
+}
+#banner .banner_content h1::after {
+  width: 90px;
+  position: absolute;
+  height: 3px;
+  background: #fff;
+  content: "";
+  right: 100px;
+  bottom: 17px;
+  -webkit-animation-name: banner_shape;
+          animation-name: banner_shape;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes banner_shape {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+@keyframes banner_shape {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+#banner .banner_content h1 .typed-text {
+  font-family: "Oswald";
+  font-size: 60px;
+  font-weight: 600;
+  color: #FF4655;
+  text-transform: uppercase;
+  position: absolute;
+  left: 3px;
+  top: 0;
+  line-height: 88px;
+  margin-left: -3px;
+}
+#banner .banner_content p {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 24px;
+  padding-right: 200px;
+}
+#banner .banner_content a {
+  display: inline-block;
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  padding: 16px 24px;
+  border-radius: 5px;
+  margin-top: 40px;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+  transition: all linear 0.3s;
+}
+#banner .banner_content a::after {
+  content: "";
+  position: absolute;
+  left: -164px;
+  top: 0;
+  width: 155px;
+  height: 100%;
+  background: #FF4655;
+  transform: skewX(-20deg);
+  transition: all linear 0.3s;
+  z-index: -1;
+}
+#banner .banner_content a:hover {
+  color: #fff;
+}
+#banner .banner_content a:hover::after {
+  left: -10px;
+}
+#banner .banner_content a span svg {
+  margin-left: 10px;
+  font-size: 14px !important;
+}
+#banner .banner-icon {
+  padding-top: 300px;
+}
+#banner .banner-icon a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  line-height: 35px;
+  color: #000;
+  transition: all linear 0.3s;
+  margin: 0 10px;
+}
+#banner .banner-icon a:hover {
+  background: #FF4655;
+  color: #fff;
+}
+
+/* =========================================================
+|   |   |   |   |   banner css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   about css start  |   |   |   |   |   |   
+============================================================*/
+#about {
+  padding-top: 35px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  background: #121212;
+}
+#about .about-header h3 {
+  font-family: "Oswald";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 56px;
+  text-transform: uppercase;
+  position: relative;
+}
+#about .about-header h3::after {
+  content: "";
+  position: absolute;
+  right: 215px;
+  bottom: 11px;
+  width: 110px;
+  height: 3px;
+  background: #fff;
+  -webkit-animation: about-shape 1s infinite;
+          animation: about-shape 1s infinite;
+}
+@-webkit-keyframes about-shape {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+@keyframes about-shape {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+#about .about-header h3 .typed2-text {
+  font-family: "Oswald";
+  font-size: 38px;
+  font-weight: 600;
+  color: #FF4655;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 56px;
+  margin-right: 60px;
+}
+#about .about-left {
+  position: relative;
+}
+#about .about-left::after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 163px;
+  height: 7px;
+  background: #FF4655;
+}
+#about .about-left::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 7px;
+  height: 163px;
+  background: #FF4655;
+}
+#about .about-left .about-image {
+  position: relative;
+  margin-top: 64px;
+  height: 400px;
+}
+#about .about-left .about-image::after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 50px;
+  height: 7px;
+  background: #FF4655;
+  -webkit-animation: first-move 3s alternate infinite;
+          animation: first-move 3s alternate infinite;
+}
+@-webkit-keyframes first-move {
+  0% {
+    left: -7px;
+  }
+  100% {
+    left: calc(100% - 50px);
+  }
+}
+@keyframes first-move {
+  0% {
+    left: -7px;
+  }
+  100% {
+    left: calc(100% - 50px);
+  }
+}
+#about .about-left .about-image::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 7px;
+  height: 50px;
+  background: #FF4655;
+  -webkit-animation: second-move 3s alternate infinite;
+          animation: second-move 3s alternate infinite;
+}
+@-webkit-keyframes second-move {
+  0% {
+    top: -7px;
+  }
+  100% {
+    top: calc(100% - 50px);
+  }
+}
+@keyframes second-move {
+  0% {
+    top: -7px;
+  }
+  100% {
+    top: calc(100% - 50px);
+  }
+}
+#about .about-left .about-image img {
+  border-radius: 0 0 65px 0;
+  height: 100%;
+}
+#about .about-right {
+  margin-top: 55px;
+  padding-left: 60px;
+}
+#about .about-right h3 {
+  font-family: "Oswald";
+  font-size: 27px;
+  font-weight: 600;
+  color: rgba(254, 228, 228, 0.5803921569);
+  line-height: 40px;
+  position: relative;
+  text-transform: uppercase;
+}
+#about .about-right h3 .typed3-text {
+  font-family: "Oswald";
+  font-size: 27px;
+  font-weight: 600;
+  color: #FF4655;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+}
+#about .about-right .about-right-list {
+  margin-top: 7px;
+}
+#about .about-right .about-right-list h4 {
+  font-family: "Barlow Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+#about .about-right .about-right-list h4 span {
+  color: #FF4655;
+  margin-right: 10px;
+}
+#about .about-right p {
+  font-family: "Oswald";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+  padding-right: 45px;
+}
+#about .about-right a {
+  display: inline-block;
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 16px 24px;
+  background: #212121;
+  margin-top: 40px;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+  border-radius: 5px;
+  transition: all linear 0.3s;
+}
+#about .about-right a::after {
+  content: "";
+  position: absolute;
+  left: -170px;
+  top: 0;
+  width: 155px;
+  height: 100%;
+  background: #FF4655;
+  transform: skewX(-20deg);
+  transition: all linear 0.3s;
+  z-index: -1;
+}
+#about .about-right a:hover {
+  color: #fff;
+}
+#about .about-right a:hover::after {
+  left: -10px;
+}
+#about .about-right a span {
+  margin-left: 10px;
+  font-size: 14px !important;
+}
+#about .count-item {
+  margin-top: 50px;
+  text-align: center;
+  background: #212121;
+  padding: 26px 0;
+  border-radius: 50px 0 50px 0;
+}
+#about .count-item h3 {
+  font-family: "Barlow Condensed";
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 72px;
+  margin-bottom: 18px;
+}
+#about .count-item h3 .count-dot {
+  color: #FF4655;
+  margin-left: 5px;
+}
+#about .count-item h5 {
+  font-family: "Oswald";
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* =========================================================
+|   |   |   |   |   about css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   popular css end  |   |   |   |   |   |   
+============================================================*/
+#popular {
+  padding-top: 115px;
+  padding-bottom: 90px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #212529;
+}
+#popular .popular-header {
+  text-align: right;
+}
+#popular .popular-header h3 {
+  font-family: "Oswald";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 56px;
+  text-transform: uppercase;
+  position: relative;
+}
+#popular .popular-header h3::after {
+  content: "";
+  position: absolute;
+  right: 125px;
+  bottom: 11px;
+  width: 110px;
+  height: 3px;
+  background: #fff;
+  -webkit-animation: popular-shape 1s infinite;
+          animation: popular-shape 1s infinite;
+}
+@-webkit-keyframes popular-shape {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+@keyframes popular-shape {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+#popular .popular-wrapper {
+  margin-top: 80px;
+}
+#popular .popular-wrapper .popular-item-left {
+  position: relative;
+}
+#popular .popular-wrapper .popular-item-left .left-item {
+  height: 390px;
+  width: 100%;
+  background: #FF4655;
+  -webkit-clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+          clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+}
+#popular .popular-wrapper .popular-item-left img {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+}
+#popular .popular-wrapper .popular-item-right {
+  position: relative;
+}
+#popular .popular-wrapper .popular-item-right .popular-slide-wrapper {
+  -webkit-clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+          clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+}
+#popular .popular-wrapper .popular-item-right .popular-slide-wrapper .popular-slide-item {
+  height: 390px;
+}
+#popular .popular-wrapper .popular-item-right .popular-slide-wrapper .popular-slide-item img {
+  height: 100%;
+  width: 100%;
+}
+#popular .popular-wrapper .popular-item-right .popular-previous {
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  transition: all linear 0.3s;
+}
+#popular .popular-wrapper .popular-item-right .popular-previous span svg {
+  font-size: 22px;
+  color: #fff;
+  transition: all linear 0.3s;
+}
+#popular .popular-wrapper .popular-item-right .popular-previous:hover {
+  border: 1px solid #FF4655;
+}
+#popular .popular-wrapper .popular-item-right .popular-previous:hover span svg {
+  color: #FF4655;
+}
+#popular .popular-wrapper .popular-item-right .popular-next {
+  position: absolute;
+  right: 16px;
+  bottom: 82px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+#popular .popular-wrapper .popular-item-right .popular-next span svg {
+  font-size: 22px;
+  color: #fff;
+  transition: all linear 0.3s;
+}
+#popular .popular-wrapper .popular-item-right .popular-next:hover {
+  border: 1px solid #FF4655;
+}
+#popular .popular-wrapper .popular-item-right .popular-next:hover span svg {
+  color: #FF4655;
+}
+
+/* =========================================================
+|   |   |   |   |   popular css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   video css start  |   |   |   |   |   |   
+============================================================*/
+#video {
+  padding: 90px 0;
+  background: #121212;
+}
+#video .video-header h3 {
+  font-family: "Oswald";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 56px;
+  text-transform: uppercase;
+  position: relative;
+}
+#video .video-header h3::after {
+  content: "";
+  position: absolute;
+  left: 140px;
+  bottom: 12px;
+  width: 110px;
+  height: 3px;
+  background: #fff;
+  -webkit-animation: video-head 1s infinite;
+          animation: video-head 1s infinite;
+}
+@-webkit-keyframes video-head {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+@keyframes video-head {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+#video .video-header h3 .typed4-text {
+  font-family: "Oswald";
+  font-size: 38px;
+  font-weight: 600;
+  color: #FF4655;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 56px;
+  margin-right: 10px;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item {
+  position: relative;
+  width: 32.2%;
+  height: 276px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 78px;
+  margin-bottom: 60px;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item img {
+  filter: grayscale(100%);
+  transition: all linear 0.3s;
+  min-height: 100%;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item .video-item {
+  padding: 100px 25px 25px 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item .video-item a {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 22px;
+  transition: all linear 0.2s;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item .video-item a:hover {
+  border: 1px solid #FF4655;
+  color: #FF4655;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item .video-item h3 {
+  font-family: "Barlow Condensed";
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 26px;
+  margin-top: 25px;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item .video-item .video-text h4 {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 23px;
+  margin-top: 5px;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item .video-item .video-text h4 span {
+  font-size: 20px !important;
+  color: #FF4655 !important;
+  margin-right: 6px;
+}
+#video .video-main .video-slider-wrapper .video-slider .video-slider-item.slick-center img {
+  transform: scale(1.11);
+  filter: grayscale(0%);
+}
+#video .game-time h3 {
+  font-family: "Barlow Condensed";
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  text-align: center;
+}
+#video .contest {
+  margin-top: 50px;
+}
+#video .contest .team-name {
+  padding: 10px 62px 10px 3px;
+  background: #212121;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+#video .contest .team-name h3 {
+  font-family: "Barlow Condensed";
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 38px;
+  letter-spacing: 3px;
+}
+#video .contest .right-name {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%) !important;
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%) !important;
+  padding: 10px 3px 10px 62px;
+}
+#video .contest .playing-time h3 {
+  font-family: "Oswald";
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 59px;
+  letter-spacing: 6px;
+}
+#video .contest .row-padding {
+  margin-top: 60px;
+}
+
+/* =========================================================
+|   |   |   |   |   video css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   pricing css start  |   |   |   |   |   |   
+============================================================*/
+#pricing {
+  padding: 90px 0;
+  background: #191919;
+}
+#pricing .pricing-header {
+  text-align: right;
+  margin-bottom: 48px;
+}
+#pricing .pricing-header h3 {
+  font-family: "Barlow Condensed";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 45px;
+  letter-spacing: 3px;
+  position: relative;
+}
+#pricing .pricing-header h3::after {
+  content: "";
+  position: absolute;
+  right: 95px;
+  bottom: 11px;
+  width: 110px;
+  height: 3px;
+  background: #FF4655;
+}
+#pricing .pricing-slider .pricing-item {
+  margin: 0 10px;
+}
+#pricing .pricing-slider .pricing-item .pricing-img {
+  position: relative;
+}
+#pricing .pricing-slider .pricing-item .pricing-img .pricing-item-shape {
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  transition: all linear 0.3s;
+}
+#pricing .pricing-slider .pricing-item .pricing-img .pricing-item-shape a {
+  display: inline-block;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  background: #212121;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+#pricing .pricing-slider .pricing-item .pricing-img .bg-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
+  transition: all linear 0.2s;
+}
+#pricing .pricing-slider .pricing-item .pricing-text {
+  margin-top: 18px;
+}
+#pricing .pricing-slider .pricing-item .pricing-text h3 {
+  font-family: "Barlow Condensed";
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+#pricing .pricing-slider .pricing-item .pricing-text h4 {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  line-height: 23px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+#pricing .pricing-slider .pricing-item .pricing-text h5 {
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 20px;
+}
+#pricing .pricing-slider .pricing-item .pricing-text h5 .box {
+  padding: 4px 4px 5px 4px;
+  background: #FF4655;
+  letter-spacing: 1px;
+  color: #fff !important;
+}
+#pricing .pricing-slider .pricing-item .pricing-text h5 .commission {
+  font-size: 16px !important;
+  color: #666666 !important;
+  line-height: 23.71px !important;
+  letter-spacing: 1.5px;
+  margin-left: 10px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+#pricing .pricing-slider .pricing-item .pricing-text h5 .rate {
+  font-size: 16px !important;
+  color: #fff !important;
+  line-height: 23.71px !important;
+  margin-left: 10px;
+}
+#pricing .pricing-slider .pricing-item:hover .pricing-img .bg-content {
+  height: 80%;
+}
+#pricing .pricing-slider .pricing-item:hover .pricing-img .pricing-item-shape a {
+  opacity: 1;
+}
+#pricing .swipe-header h4 {
+  font-family: "Barlow Condensed";
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 24px;
+  margin-top: 60px;
+}
+#pricing .game-slider {
+  padding: 42px 111px 42px 44px;
+  background: #212121;
+  margin-top: 30px;
+}
+#pricing .game-slider .game-text h4 {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 500;
+  color: #bcbcbc;
+  line-height: 23px;
+  letter-spacing: 1px;
+  position: relative;
+  margin-top: 3px;
+}
+#pricing .game-slider .game-text h4 .typed5-text {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 500;
+  color: #FF4655;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+#pricing .game-slider .game-text h3 {
+  font-family: "Barlow Condensed";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+#pricing .game-slider .game-text p {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  line-height: 23px;
+  margin-top: 15px;
+  padding-right: 40px;
+}
+#pricing .game-slider .game-text a {
+  display: inline-block;
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 13px 31px;
+  background: #121212;
+  margin-top: 25px;
+  line-height: 23.71px;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+  transition: all linear 0.3s;
+}
+#pricing .game-slider .game-text a::after {
+  content: "";
+  position: absolute;
+  left: -164px;
+  top: 0;
+  width: 155px;
+  height: 100%;
+  background: #FF4655;
+  transform: skewX(-20deg);
+  transition: all linear 0.3s;
+  z-index: -1;
+}
+#pricing .game-slider .game-text a:hover {
+  color: #fff;
+}
+#pricing .game-slider .game-text a:hover::after {
+  left: -10px;
+}
+#pricing .game-slider .poster-main {
+  position: relative;
+  margin-left: auto;
+}
+#pricing .game-slider .poster-main .poster-list .poster-item {
+  opacity: 1 !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#pricing .game-slider .poster-main .poster-list .poster-item img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+#pricing .game-slider .poster-main .poster-btn {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+#pricing .game-slider .poster-main .poster-prev-btn {
+  left: 0;
+}
+#pricing .game-slider .poster-main .poster-next-btn {
+  right: 0;
+}
+
+/* =========================================================
+|   |   |   |   |   pricing css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   store css start  |   |   |   |   |   |   
+============================================================*/
+#store {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 0;
+  padding-right: 0;
+  background: #121212;
+}
+#store .store-header h3 {
+  font-family: "Barlow Condensed";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 56px;
+  letter-spacing: 3px;
+  position: relative;
+}
+#store .store-header h3::after {
+  content: "";
+  position: absolute;
+  left: 200px;
+  bottom: 12px;
+  width: 110px;
+  height: 3px;
+  background: #fff;
+  -webkit-animation: store-head 1s infinite;
+          animation: store-head 1s infinite;
+}
+@-webkit-keyframes store-head {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+@keyframes store-head {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+#store .store-header h3 .typed6-text {
+  font-family: "Barlow Condensed";
+  font-size: 38px;
+  font-weight: 600;
+  color: #FF4655;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 56px;
+  letter-spacing: 3px;
+  margin-right: 40px;
+}
+#store .store-content {
+  margin-top: 102px;
+  position: relative;
+  transition: all linear 0.3s;
+}
+#store .store-content .store-slider .store-item {
+  padding: 24px 0 22px 0;
+  background: #212121;
+  text-align: center;
+  margin: 0 10px;
+}
+#store .store-content .store-slider .store-item h3 {
+  font-family: "Oswald";
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+#store .store-content .store-slider .store-item .store-img {
+  margin-bottom: 35px;
+  margin-top: 7px;
+}
+#store .store-content .store-slider .store-item h4 {
+  font-family: "Oswald";
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 37px;
+}
+#store .store-content .store-slider .store-item a {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 23px;
+  margin-top: 7px;
+}
+#store .store-content .store-previous {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FF4655;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+#store .store-content .store-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FF4655;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  visibility: hidden;
+  transition: all linear 0.3s;
+  opacity: 0;
+}
+#store .store-content:hover .store-previous, #store .store-content:hover .store-next {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* =========================================================
+|   |   |   |   |   store css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   team css start  |   |   |   |   |   |   
+============================================================*/
+#team {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  background: #191919;
+}
+#team .team-header {
+  text-align: right;
+  margin-bottom: 50px;
+}
+#team .team-header h3 {
+  font-family: "Barlow Condensed";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 45px;
+  letter-spacing: 3px;
+  position: relative;
+}
+#team .team-header h3::after {
+  content: "";
+  position: absolute;
+  right: 95px;
+  bottom: 11px;
+  width: 110px;
+  height: 3px;
+  background: #FF4655;
+}
+#team .team-item .team-img-content .team-img {
+  position: relative;
+  overflow: hidden;
+}
+#team .team-item .team-img-content .team-img img {
+  filter: grayscale(100%);
+  transition: all linear 0.3s;
+}
+#team .team-item .team-img-content .team-img .team-text-content {
+  background: rgba(37, 36, 36, 0.34);
+  padding: 35px 30px 30px 30px;
+  position: absolute;
+  left: 0;
+  bottom: -146px;
+  width: 100%;
+  z-index: 9;
+  transition: all linear 0.3s;
+}
+#team .team-item .team-img-content .team-img .team-text-content h4 {
+  font-family: "Barlow Condensed";
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 36px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+#team .team-item .team-img-content .team-img .team-text-content .team-last-text p {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 23px;
+  padding-right: 10px;
+}
+#team .team-item .team-img-content .team-img .team-text-content .team-btn a {
+  display: inline-block;
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 23.71px;
+  padding: 6px 20px;
+  background: #FF4655;
+  margin-top: 15px;
+}
+#team .team-item .team-img-content .team-img .team-text-content .team-icon a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #FF4655;
+  margin: 20px 10px 0 10px;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  font-size: 18px;
+}
+#team .team-item:hover .team-img img {
+  filter: grayscale(0%);
+}
+#team .team-item:hover .team-img .team-text-content {
+  bottom: 0;
+}
+
+/* =========================================================
+|   |   |   |   |   team css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   question css start  |   |   |   |   |   |   
+============================================================*/
+#question {
+  padding: 55px 0 200px 0;
+  background: #121212;
+}
+#question .ques-cont {
+  position: relative;
+}
+#question .ques-cont .ques-header {
+  margin-bottom: 92px;
+}
+#question .ques-cont .ques-header h3 {
+  font-family: "Barlow Condensed";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 56px !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  position: relative;
+}
+#question .ques-cont .ques-header h3::after {
+  position: absolute;
+  content: "";
+  right: 180px;
+  bottom: 7px;
+  background: #FF4655;
+  height: 3px;
+  width: 105px;
+  animation: stream_head 1s infinite;
+  -webkit-animation: question-head 1s infinite;
+}
+@-webkit-keyframes question-head {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+@keyframes question-head {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: #FF4655;
+  }
+}
+#question .ques-cont .ques-header h3 .typed7-text {
+  font-family: "Barlow Condensed";
+  font-size: 38px;
+  font-weight: 600;
+  color: #FF4655;
+  letter-spacing: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-right: 40px;
+  text-transform: uppercase;
+}
+#question .ques-cont .ques-content {
+  position: relative;
+}
+#question .ques-cont .ques-content .ques-item .ques-shape {
+  width: 70px;
+  height: 70px;
+  background: #FF4655;
+  margin-top: 7px;
+}
+#question .ques-cont .ques-content .ques-item .ques-shape h4 {
+  font-family: "Barlow Condensed";
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 45px;
+  letter-spacing: 3px;
+}
+#question .ques-cont .ques-content .ques-item .ques-text a {
+  display: inline-block;
+  font-family: "Barlow Condensed";
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 26.4px;
+  margin-bottom: 10px;
+  transition: all linear 0.3s;
+}
+#question .ques-cont .ques-content .ques-item .ques-text a:hover {
+  color: #FF4655;
+}
+#question .ques-cont .ques-content .ques-item .ques-text p {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  line-height: 23.71px;
+}
+#question .ques-cont .ques-content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 49.9%;
+  width: 100%;
+  height: 1px;
+  background: #666666;
+}
+#question .ques-cont .ques-content::before {
+  content: "";
+  position: absolute;
+  left: 49.9%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #666666;
+}
+#question .ques-cont .ques-search {
+  padding: 35px 16px 35px 30px;
+  background: #FF4655;
+  position: absolute;
+  left: 0;
+  bottom: -285px;
+}
+#question .ques-cont .ques-search .ques-search-text h3 {
+  font-family: "Barlow Condensed";
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+#question .ques-cont .ques-search .search-box {
+  position: relative;
+}
+#question .ques-cont .ques-search .search-box input {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  width: 410px;
+  height: 40px;
+  background: #fff;
+  border-radius: 30px;
+  line-height: 19px;
+  text-transform: uppercase;
+  padding: 11px 0 11px 20px;
+  color: #666666;
+  outline: none;
+  border: none;
+}
+#question .ques-cont .ques-search .search-box .btn-ques button {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  height: 40px;
+  width: 117px;
+  background: #191919;
+  border-radius: 30px;
+  line-height: 19px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* =========================================================
+|   |   |   |   |   question css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   footer css start  |   |   |   |   |   |   
+============================================================*/
+#footer {
+  padding: 130px 0 25px 0;
+  background: #191919;
+}
+#footer .footer-content {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #666666;
+}
+#footer .footer-content .footer-item1 a {
+  font-family: "Barlow Condensed";
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 42px;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+#footer .footer-content .footer-item1 a span {
+  font-size: 50px !important;
+  color: #FF4655 !important;
+}
+#footer .footer-content .footer-item1 p {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding-right: 78px;
+  padding-top: 50px;
+}
+#footer .footer-content .footer-item1 .footer-icon {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-top: 60px;
+  text-align: center;
+  align-items: end;
+  justify-content: start;
+}
+#footer .footer-content .footer-item1 .footer-icon a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #212529;
+  color: #fff;
+  font-size: 22px;
+  line-height: 50px;
+  transition: all linear 0.3s;
+}
+#footer .footer-content .footer-item2 {
+  margin-top: 18px;
+}
+#footer .footer-content .footer-item2 h4 {
+  font-family: "Barlow Condensed";
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#footer .footer-content .footer-item2 a {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  line-height: 23px;
+  margin-top: 30px;
+  display: block;
+  transition: all linear 0.3s;
+}
+#footer .footer-content .footer-item2 a:hover {
+  color: #FF4655;
+}
+#footer .footer-content .footer-item3 {
+  margin-top: 18px;
+}
+#footer .footer-content .footer-item3 h4 {
+  font-family: "Barlow Condensed";
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#footer .footer-content .footer-item3 a {
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  line-height: 23px;
+  margin-top: 30px;
+  display: block;
+  transition: all linear 0.3s;
+}
+#footer .footer-content .footer-item3 a:hover {
+  color: #FF4655;
+}
+#footer .footer-content .footer-item4 {
+  margin-top: 18px;
+}
+#footer .footer-content .footer-item4 h4 {
+  font-family: "Barlow Condensed";
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: -10px;
+}
+#footer .footer-content .footer-item4 .gallery-item {
+  margin: 3px;
+}
+
+/* =========================================================
+|   |   |   |   |   footer css end  |   |   |   |   |   |   
+============================================================*/
+/* =========================================================
+|   |   |   |   |   copyright css start  |   |   |   |   |   |   
+============================================================*/
+#copy {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  background: #191919;
+}
+#copy .copy-right h4 {
+  font-family: "Barlow Condensed";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 24px;
+}
+#copy .copy-right h4 a {
+  font-family: "Barlow Condensed";
+  font-size: 20px;
+  font-weight: 400;
+  color: #FF4655;
+  line-height: 24px;
+}
+
+/* =========================================================
+|   |   |   |   |   copyright css end  |   |   |   |   |   |   
+============================================================*//*# sourceMappingURL=style.css.map */
