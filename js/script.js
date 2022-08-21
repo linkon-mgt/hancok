@@ -87,8 +87,8 @@ $(function () {
 
     // venobox start
     new VenoBox({
-    selector: '.video-links',
-});
+        selector: '.video-links',
+    });
     // venobox end
 
 
@@ -98,31 +98,83 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows:true,
-        prevArrow:'.popular-previous',
-        nextArrow:'.popular-next',
-      });
+        arrows: true,
+        prevArrow: '.popular-previous',
+        nextArrow: '.popular-next',
+    });
     // popular slider end
 
     // video slider start
     $('.video-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay:true,
+        autoplay: true,
         autoplaySpeed: 2000,
-        arrows:false,
+        arrows: false,
         centerMode: true,
         centerPadding: '0',
-      });
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+        ]
+    });
     // video slider end
 
     // pricing slider start
     $('.pricing-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay:true,
+        autoplay: true,
         autoplaySpeed: 2000,
-        arrows:false,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+        ]
     });
     // pricing slider end
 
@@ -131,13 +183,112 @@ $(function () {
     $('.store-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay:true,
+        autoplay: true,
         autoplaySpeed: 2000,
-        arrows:true,
-        prevArrow:'.store-previous',
-        nextArrow:'.store-next',
+        arrows: true,
+        prevArrow: '.store-previous',
+        nextArrow: '.store-next',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
+              autoplay: true,
+            }
+          },
+        ]
     });
     // store slider end
 
 
+    //sticky menu start
+    $(window).scroll(function () {
+        var sticky = $(this).scrollTop()
+        if (sticky > 50) {
+            $(".navbar").addClass("sticky-menu")
+        } else {
+            $(".navbar").removeClass("sticky-menu")
+        }
+    });
+      //sricky menu end
+
+
+//smooth scroll start
+  var html_body = $('html, body');
+  $('.nav-item a').on('click', function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        html_body.animate({
+          scrollTop: target.offset().top - 100
+        }, 1500);
+        return false;
+      }
+    }
+  });
+  //smooth scrool end
+
+
+  //back to top button start
+
+  //back to to button animation
+  $(window).scroll(function () {
+    var sticky = $(this).scrollTop()
+    if (sticky > 50) {
+      $(".bottom-to-top").fadeIn(300)
+    } else {
+      $(".bottom-to-top").fadeOut(300)
+    }
+  });
+  //back to top button click
+  $(".bottom-to-top").click(function () {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 2000)
+  })
+  //back to top button  end
+
 });
+
+// custom mobile menu start
+let mobile_menu = document.getElementById("mobile-menu");
+let bars = document.querySelector(".bars");
+let line_one = document.querySelector(".line-one");
+let line_two = document.querySelector(".line-two");
+let line_three = document.querySelector(".line-three");
+
+
+bars.addEventListener("click", function () {
+  mobile_menu.classList.toggle("slide-menu");
+  line_one.classList.toggle("close-line1");
+  line_two.classList.toggle("close-line2");
+  line_three.classList.toggle("close-line3");
+})
+
+// custom mobile menu end

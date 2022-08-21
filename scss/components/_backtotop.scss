@@ -1,0 +1,49 @@
+/*================================================
+        |   |  back to top css start |    |   |   |
+ ================================================*/
+ #bottom-top{
+    .bottom-to-top{
+        position: fixed;
+        right: 15px;
+        bottom: 20px;
+        height: 40px;
+        width: 40px;
+        background-color: $hoverbg;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 99999;
+        display: none;
+        transition: all linear 0.3s;
+        animation: btp 1s linear;
+        border: 1px solid #fff;
+        .btt-icon{
+            font-size: 20px;
+            color: #fff;
+            transition: all linear 0.3s;
+        }
+        &:hover{
+            background-color: #fff;
+            transform: scale(1.2);
+            border: 1px solid #111;
+            .btt-icon{
+                color: #111;
+            }
+        }
+        @keyframes btp {
+            0% {
+                bottom: 85%;
+                right: 15px;
+            }
+        
+            100% {
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+    }
+}
+/*================================================
+        |   |   |back to top css end |   |   |   |
+ ================================================*/

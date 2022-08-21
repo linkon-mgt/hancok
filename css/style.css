@@ -100,7 +100,98 @@ html, body {
 .navbar .navbar-item2 .nav-item .nav-link::after {
   display: none;
 }
+.navbar .bars {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #FF4655;
+  position: relative;
+  right: 0;
+  top: 0;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 99999;
+}
+.navbar .bars .bar-line {
+  display: inline-block;
+  height: 4px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: #FF4655;
+  margin: 4px 0;
+  transition: all linear 0.3s;
+}
+.navbar .bars .line-one.close-line1 {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 17px;
+  left: 3px;
+  width: 45px;
+}
+.navbar .bars .line-two.close-line2 {
+  opacity: 0;
+}
+.navbar .bars .line-three.close-line3 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 17px;
+  left: 3px;
+  width: 45px;
+}
+.navbar #mobile-menu {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #212121;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  z-index: 999;
+  transition: all linear 0.3s;
+}
+.navbar #mobile-menu .nav-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar #mobile-menu.slide-menu {
+  left: 0;
+}
 
+.sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212121;
+  -webkit-animation: sticky 1s linear;
+          animation: sticky 1s linear;
+  z-index: 999;
+  padding: 30px 0;
+}
+
+@-webkit-keyframes sticky {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes sticky {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
 /* =========================================================
 |   |   |   |   |   navbar css end  |   |   |   |   |   |   
 ============================================================*/
@@ -302,7 +393,7 @@ html, body {
   left: 0;
   top: 0;
   line-height: 56px;
-  margin-right: 60px;
+  margin-right: 80px;
 }
 #about .about-left {
   position: relative;
@@ -680,7 +771,7 @@ html, body {
   left: 0;
   top: 0;
   line-height: 56px;
-  margin-right: 10px;
+  margin-right: 60px;
 }
 #video .video-main .video-slider-wrapper .video-slider .video-slider-item {
   position: relative;
@@ -1592,4 +1683,62 @@ html, body {
 
 /* =========================================================
 |   |   |   |   |   copyright css end  |   |   |   |   |   |   
-============================================================*//*# sourceMappingURL=style.css.map */
+============================================================*/
+/*================================================
+        |   |  back to top css start |    |   |   |
+ ================================================*/
+#bottom-top .bottom-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #FF4655;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99999;
+  display: none;
+  transition: all linear 0.3s;
+  -webkit-animation: btp 1s linear;
+          animation: btp 1s linear;
+  border: 1px solid #fff;
+}
+#bottom-top .bottom-to-top .btt-icon {
+  font-size: 20px;
+  color: #fff;
+  transition: all linear 0.3s;
+}
+#bottom-top .bottom-to-top:hover {
+  background-color: #fff;
+  transform: scale(1.2);
+  border: 1px solid #111;
+}
+#bottom-top .bottom-to-top:hover .btt-icon {
+  color: #111;
+}
+@-webkit-keyframes btp {
+  0% {
+    bottom: 85%;
+    right: 15px;
+  }
+  100% {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+@keyframes btp {
+  0% {
+    bottom: 85%;
+    right: 15px;
+  }
+  100% {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/*================================================
+        |   |   |back to top css end |   |   |   |
+ ================================================*//*# sourceMappingURL=style.css.map */

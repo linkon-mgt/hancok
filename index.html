@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -30,28 +31,28 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
                 <ul class="navbar-nav navbar-item1 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#banner">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#about">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tornament</a>
+                        <a class="nav-link" href="#video">Tornament</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Store</a>
+                        <a class="nav-link" href="#store">Store</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#question">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#footer">Contact Us</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav navbar-item2 ms-auto mb-2 mb-lg-0">
@@ -68,6 +69,36 @@
                 </ul>
 
             </div>
+            <!-- custom menu bar start -->
+            <div class="bars d-flex align-items-center justify-content-center d-block d-lg-none">
+                <div class="bar-line line-one"></div>
+                <div class="bar-line line-two"></div>
+                <div class="bar-line line-three"></div>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-block d-lg-none" id="mobile-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#banner">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#video">Tornament</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#store">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#question">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact Us</a>
+                </li>
+            </ul>
+            <!-- custom menu bar end -->
         </div>
     </nav>
     <!-- =====================================================
@@ -81,7 +112,7 @@
     <section id="banner">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-xxl-7">
                     <div class="banner_content">
                         <h2 class="wow animate__animated animate__bounceInDown animate__slow">LiFE TiME</h2>
                         <h1 class="wow animate__animated animate__bounceInLeft animate__slow">GAmING EXPeRIENCE
@@ -122,7 +153,7 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-xxl-5">
                     <div class="about-header wow animate__animated animate__slow animate__fadeInLeft">
                         <h3>ABOUT THE BIGGEST HANCOK
                             COMMUNITY<span class="typed2-text"></span></h3>
@@ -130,16 +161,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 ">
+                <div class="col-md-6 col-lg-6 ">
                     <div class="about-left wow animate__animated animate__slow animate__fadeInLeft">
                         <div class="about-image">
                             <img src="images/about.png" class="w-100 img-fluid" alt="about">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 col-lg-6">
                     <div class="about-right wow animate__animated animate__slow animate__fadeInRight">
-                        <h3>MOST POPULAR GAMING PLATFORM.<span class="typed3-text"></span></h3>
+                        <div class="about-right-typed">
+                            <h3>MOST POPULAR GAMING PLATFORM.<span class="typed3-text"></span></h3>
+                        </div>
                         <div class="about-right-list">
                             <h4><span><i class="fa-solid fa-check"></i></span>World Bigghest Community & Gaming Server
                             </h4>
@@ -155,30 +188,32 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo sed odio
                             temporibus magni quia eveniet odit placeat repellat quod ipsum modi
                             necessitatibus, dolorum officia!</p>
+                       <div class="about-right-link">
                         <a href="#">View More <span><i class="fa-solid fa-angles-right"></i></span></a>
+                       </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="count-item wow animate__animated animate__slow animate__bounceInLeft">
                         <h3><span class="count">112</span>k<span class="count-dot">.</span></h3>
                         <h5>Community Earning</h5>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="count-item wow animate__animated animate__slow animate__bounceInLeft">
                         <h3><span class="count">12</span>M<span class="count-dot">.</span></h3>
                         <h5>Total Member</h5>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="count-item wow animate__animated animate__slow animate__bounceInRight">
                         <h3><span class="count">100</span>k<span class="count-dot">.</span></h3>
                         <h5>Streams Complete</h5>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-md-6 col-lg-3">
                     <div class="count-item wow animate__animated animate__slow animate__bounceInRight">
                         <h3><span class="count">844</span><span class="count-dot">.</span></h3>
                         <h5>Total Sponsers</h5>
@@ -198,7 +233,7 @@
     <section id="popular">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-6">
+                <div class="col-lg-6 col-xxl-5 offset-lg-6 offset-xxl-7">
                     <div class="popular-header wow animate__animated animate__slow animate__bounceInRight">
                         <h3>POPULAR GAMES AROUND THE WORLD</h3>
                     </div>
@@ -206,29 +241,29 @@
             </div>
             <div class="popular-wrapper">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-md-6 col-lg-6">
                         <div class="popular-item-left wow animate__animated animate__slow animate__slideInLeft">
                             <div class="left-item"></div>
-                            <img src="images/popular1.png" alt="popular1">
+                            <img src="images/popular1.png" alt="popular1" class="w-100 img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-6 col-lg-6">
                         <div class="popular-item-right wow animate__animated animate__slow animate__slideInRight">
                             <div class="popular-slide-wrapper">
                                 <div class="popular-slide-item">
-                                    <img src="images/popular2.png" class="w-100 img-fluid" alt="popular2">
+                                    <img src="images/popular2.png" class="w-100" alt="popular2">
                                 </div>
                                 <div class="popular-slide-item">
-                                    <img src="images/popular3.png" class="w-100 img-fluid" alt="popular3">
+                                    <img src="images/popular3.png" class="w-100" alt="popular3">
                                 </div>
                                 <div class="popular-slide-item">
-                                    <img src="images/popular4.png" class="w-100 img-fluid" alt="popular4">
+                                    <img src="images/popular4.png" class="w-100" alt="popular4">
                                 </div>
                                 <div class="popular-slide-item">
-                                    <img src="images/popular5.png" class="w-100 img-fluid" alt="popular5">
+                                    <img src="images/popular5.png" class="w-100" alt="popular5">
                                 </div>
                                 <div class="popular-slide-item">
-                                    <img src="images/popular6.png" class="w-100 img-fluid" alt="popular6">
+                                    <img src="images/popular6.png" class="w-100" alt="popular6">
                                 </div>
                             </div>
                             <div class="popular-previous d-flex justify-content-center align-items-center"><span><i
@@ -252,7 +287,7 @@
     <section id="video">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-xxl-4">
                     <div class="video-header">
                         <h3 class="wow animate__animated animate__slow animate__bounceInLeft">LIVE STREAMIN VIDEO BY
                             HANCOK<span class="typed4-text"></span></h3>
@@ -360,20 +395,20 @@
             </div>
             <div class="contest">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-lg-4">
                         <div
                             class="team-name text-end wow animate__animated animate__slow animate__slideInLeft d-flex justify-content-between align-items-center">
                             <img src="images/participate1.png" alt="participate1">
                             <h3>TEAM DELTA</h3>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-md-2 col-lg-2">
                         <div
                             class="playing-time wow animate__animated animate__slow animate__fadeInUp d-flex justify-content-center">
                             <h3>9:12</h3>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-lg-4">
                         <div
                             class="team-name right-name wow animate__animated animate__slow animate__slideInRight clippy d-flex justify-content-between align-items-center">
                             <h3>TEAM ALPHA</h3>
@@ -382,22 +417,22 @@
                     </div>
                 </div>
                 <div class="row row-padding justify-content-center align-items-center">
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-lg-4">
                         <div
-                            class="team-name text-end wow animate__animated animate__slow animate__slideInLeft d-flex justify-content-between align-items-center">
+                            class="team-name second-team text-end wow animate__animated animate__slow animate__slideInLeft d-flex justify-content-between align-items-center">
                             <img src="images/participate3.png" alt="participate3">
                             <h3>TEAM DEVILS</h3>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-md-2 col-lg-2">
                         <div
                             class="playing-time wow animate__animated animate__slow animate__fadeInUp d-flex justify-content-center">
                             <h3>17:8</h3>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-lg-4">
                         <div
-                            class="team-name right-name wow animate__animated animate__slow animate__slideInRight clippy d-flex justify-content-between align-items-center">
+                            class="team-name second-team right-name wow animate__animated animate__slow animate__slideInRight clippy d-flex justify-content-between align-items-center">
                             <h3>TEAM NINJA</h3>
                             <img src="images/participate4.png" alt="participate4">
                         </div>
@@ -418,7 +453,7 @@
     <section id="pricing">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 ms-lg-auto">
+                <div class="col-lg-6 col-xxl-5 ms-lg-auto">
                     <div class="pricing-header wow animate__animated animate__slow animate__bounceInRight">
                         <h3>TOP GAMES ON BLACK FRIDAY SALE</h3>
                     </div>
@@ -590,43 +625,49 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="game-text  wow animate__animated animate__slow animate__bounceInLeft">
-                            <h4>Choose Your Favourite Game<span class="typed5-text"></span></h4>
+                            <div class="game-typed">
+                                <h4>Choose Your Favourite Game<span class="typed5-text"></span></h4>
+                            </div>
                             <h3>Explore hancok catalog for your next
                                 favorite game!</h3>
 
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus culpa ratione enim
                                 maiores nisi cupiditate non nesciunt officia labore aut? Et, vero!</p>
-                            <a href="#">Browse All</a>
+                            <div class="game-link">
+                                <a href="#">Browse All</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="poster-main wow animate__animated animate__slow animate__bounceInRight"
-                            id="carousel" data-setting='{
-							"width":400,
-							"height":370,
-							"posterWidth":264,
-							"posterHeight":370,
-							"scale":0.9,
-							"speed":1000,
-							"autoPlay":true,
-							"delay":2000,
-							"verticalAlign":"middle"
-							}'>
-                            <div class="poster-btn poster-prev-btn"></div>
-                            <ul class="poster-list">
-                                <li class="poster-item"><img src="images/poster1.png" class="w-100 img-fluid"
-                                        alt="poster1" /></li>
-                                <li class="poster-item"><img src="images/poster2.png" class="w-100 img-fluid"
-                                        alt="poster2" /></li>
-                                <li class="poster-item"><img src="images/poster3.png" class="w-100 img-fluid"
-                                        alt="poster3" /></li>
-                                <li class="poster-item"><img src="images/poster4.png" class="w-100 img-fluid"
-                                        alt="poster4" /></li>
-                                <li class="poster-item"><img src="images/poster5.png" class="w-100 img-fluid"
-                                        alt="poster5" /></li>
-                            </ul>
-                            <div class="poster-btn poster-next-btn"></div>
-                        </div>
+                 <div class="poster-wrapper">
+                    <div class="poster-main wow animate__animated animate__slow animate__bounceInRight"
+                    id="carousel" data-setting='{
+                    "width":400,
+                    "height":370,
+                    "posterWidth":264,
+                    "posterHeight":370,
+                    "scale":0.9,
+                    "speed":1000,
+                    "autoPlay":true,
+                    "delay":2000,
+                    "verticalAlign":"middle"
+                    }'>
+                    <div class="poster-btn poster-prev-btn"></div>
+                    <ul class="poster-list">
+                        <li class="poster-item"><img src="images/poster1.png" class="w-100 img-fluid"
+                                alt="poster1" /></li>
+                        <li class="poster-item"><img src="images/poster2.png" class="w-100 img-fluid"
+                                alt="poster2" /></li>
+                        <li class="poster-item"><img src="images/poster3.png" class="w-100 img-fluid"
+                                alt="poster3" /></li>
+                        <li class="poster-item"><img src="images/poster4.png" class="w-100 img-fluid"
+                                alt="poster4" /></li>
+                        <li class="poster-item"><img src="images/poster5.png" class="w-100 img-fluid"
+                                alt="poster5" /></li>
+                    </ul>
+                    <div class="poster-btn poster-next-btn"></div>
+                </div>
+                 </div>
                     </div>
                 </div>
             </div>
@@ -643,7 +684,7 @@
     <section id="store">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6 col-xl-5">
                     <div class="store-header wow animate__animated animate__slow animate__bounceInLeft">
                         <h3>WE PROVIDE ALL GAMING ACCESORIES<span class="typed6-text"></span></h3>
                     </div>
@@ -753,7 +794,7 @@
     <section id="team">
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-xxl-5">
                     <div class="team-header wow animate__animated animate__slow animate__bounceInRight">
                         <h3>MEET OUR PROFESSIONAL ELITE
                             TEAM</h3>
@@ -761,7 +802,7 @@
                 </div>
             </div>
             <div class="row ">
-                <div class="col-lg-6 mb-5">
+                <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-item wow animate__animated animate__slow animate__fadeInTopLeft">
                         <div class="team-img-content">
                             <div class="team-img">
@@ -796,7 +837,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-item wow animate__animated animate__slow animate__fadeInTopRight">
                         <div class="team-img-content">
                             <div class="team-img">
@@ -832,7 +873,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-item wow animate__animated animate__slow animate__fadeInBottomLeft">
                         <div class="team-img-content">
                             <div class="team-img">
@@ -868,7 +909,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-item wow animate__animated animate__slow animate__fadeInBottomRight">
                         <div class="team-img-content">
                             <div class="team-img">
@@ -918,15 +959,15 @@
     <section id="question">
         <div class="container ques-cont">
             <div class="row">
-                <div class="col-lg-6">
-                        <div class="ques-header wow animate__animated animate__slow animate__bounceInLeft">
-                            <h3>FREQUENTLY ASKED QUESTION AND ANSWER<span class="typed7-text"></span></h3>
-                        </div>
+                <div class="col-lg-7 col-xl-6 col-xxl-5">
+                    <div class="ques-header wow animate__animated animate__slow animate__bounceInLeft">
+                        <h3>FREQUENTLY ASKED QUESTION AND ANSWER<span class="typed7-text"></span></h3>
+                    </div>
                 </div>
             </div>
             <div class="ques-content">
                 <div class="row justify-content-between dfdfdfdf">
-                    <div class="col-lg-6 my-5">
+                    <div class="col-md-6 col-lg-6 my-5">
                         <div class="ques-item wow animate__animated animate__slow animate__slideInLeft">
                             <div class="row">
                                 <div class="col-lg-2">
@@ -945,7 +986,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 my-5">
+                    <div class="col-md-6 col-lg-6 my-5">
                         <div class="ques-item wow animate__animated animate__slow animate__slideInRight">
                             <div class="row justify-content-end">
                                 <div class="col-lg-2">
@@ -964,7 +1005,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 my-5">
+                    <div class="col-md-6 col-lg-6 my-5">
                         <div class="ques-item wow animate__animated animate__slow animate__slideInLeft">
                             <div class="row">
                                 <div class="col-lg-2">
@@ -983,7 +1024,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 my-5">
+                    <div class="col-md-6 col-lg-6 my-5">
                         <div class="ques-item wow animate__animated animate__slow animate__slideInRight">
                             <div class="row justify-content-end">
                                 <div class="col-lg-2">
@@ -1006,13 +1047,13 @@
             </div>
             <div class="ques-search wow animate__animated animate__slow animate__bounceInUp">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-7">
+                    <div class="col-md-7 col-lg-7">
                         <div class="ques-search-text">
                             <h3>subscribe us to get latest news in your inbox
                                 from hancok community</h3>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-md-5 col-lg-5">
                         <form>
                             <div class="search-box d-flex justify-content-end">
                                 <input type="text" placeholder="your Email">
@@ -1035,105 +1076,118 @@
     <!-- =====================================================
     |   |   |   |   |  footer part start |  |     |   |  
 ==============================================================-->
-<footer id="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="row justify-content-between">
-          <div class="col-lg-5">
-            <div class="footer-item1 wow animate__animated animate__slow animate__fadeInLeft">
-              <a href="#">Hancok <span>.</span></a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero
-                officiis rem consectetur sunt cupiditate eius obcaecati, culpa,
-                aspernatur aperiam id.</p>
-              <div class="footer-icon d-flex">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="footer-item2 wow animate__animated animate__slow animate__slideInLeft">
-              <h4>LInks</h4>
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Tournament</a>
-              <a href="#">Contact</a>
-            </div>
-          </div>
-          <div class="col-lg-1">
-            <div class="footer-item3 wow animate__animated animate__slow animate__slideInRight">
-              <h4>TEAMS</h4>
-              <a href="#">PALADINS</a>
-              <a href="#">CS:GO</a>
-              <a href="#">DOTA 2</a>
-              <a href="#">VALORANT</a>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-item4 wow animate__animated animate__slow animate__slideInRight">
-              <h4>GALLERY</h4>
-              <div class="gallery-content">
-                <div class="row">
-                  <div class="col-lg-4 gx-0">
-                    <div class="gallery-item">
-                      <img src="images/footer1.png" class="w-100 img-fluid" alt=" gal1">
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row justify-content-between">
+                    <div class="col-md-8 col-lg-5">
+                        <div class="footer-item1 wow animate__animated animate__slow animate__fadeInLeft">
+                            <a href="#">Hancok <span>.</span></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero
+                                officiis rem consectetur sunt cupiditate eius obcaecati, culpa,
+                                aspernatur aperiam id.</p>
+                            <div class="footer-icon d-flex">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4 gx-0">
-                    <div class="gallery-item">
-                      <img src="images/footer2.png" class="w-100 img-fluid" alt=" gal1">
+                    <div class="col-6 col-md-4 col-lg-1">
+                        <div class="footer-item2 wow animate__animated animate__slow animate__slideInLeft">
+                            <h4>LInks</h4>
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Tournament</a>
+                            <a href="#">Contact</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4 gx-0">
-                    <div class="gallery-item">
-                      <img src="images/footer3.png" class="w-100 img-fluid" alt=" gal1">
+                    <div class="col-6 col-md-4 col-lg-1">
+                        <div class="footer-item3 wow animate__animated animate__slow animate__slideInRight">
+                            <h4>TEAMS</h4>
+                            <a href="#">PALADINS</a>
+                            <a href="#">CS:GO</a>
+                            <a href="#">DOTA 2</a>
+                            <a href="#">VALORANT</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4 gx-0">
-                    <div class="gallery-item">
-                      <img src="images/footer4.png" class="w-100 img-fluid" alt=" gal1">
+                    <div class="col-md-6 offset-md-2 offset-lg-0 col-lg-3">
+                        <div class="footer-item4 wow animate__animated animate__slow animate__slideInRight">
+                            <h4>GALLERY</h4>
+                            <div class="gallery-content">
+                                <div class="row">
+                                    <div class="col-4 col-lg-4 gx-0">
+                                        <div class="gallery-item">
+                                            <img src="images/footer1.png" class="w-100 img-fluid" alt=" gal1">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-4 gx-0">
+                                        <div class="gallery-item">
+                                            <img src="images/footer2.png" class="w-100 img-fluid" alt=" gal1">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-4 gx-0">
+                                        <div class="gallery-item">
+                                            <img src="images/footer3.png" class="w-100 img-fluid" alt=" gal1">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-4 gx-0">
+                                        <div class="gallery-item">
+                                            <img src="images/footer4.png" class="w-100 img-fluid" alt=" gal1">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-4 gx-0">
+                                        <div class="gallery-item">
+                                            <img src="images/footer5.png" class="w-100 img-fluid" alt=" gal1">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg-4 gx-0">
+                                        <div class="gallery-item">
+                                            <img src="images/footer6.png" class="w-100 img-fluid" alt=" gal1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4 gx-0">
-                    <div class="gallery-item">
-                      <img src="images/footer5.png" class="w-100 img-fluid" alt=" gal1">
-                    </div>
-                  </div>
-                  <div class="col-lg-4 gx-0">
-                    <div class="gallery-item">
-                      <img src="images/footer6.png" class="w-100 img-fluid" alt=" gal1">
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
     <!-- =====================================================
     |   |   |   |   |  footer part end |  |     |   |  
 ==============================================================-->
     <!-- =====================================================
     |   |   |   |   |  copyright part start |  |     |   |  
 ==============================================================-->
-<section id="copy">
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 m-auto">
-            <div class="copy-right text-center wow animate__animated animate__slow animate__bounceInDown">
-                <h4>&copy; 2021 All rights reserved by <a href="#"> Themebea.</a></h4>
-              </div>
+    <section id="copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 m-auto">
+                    <div class="copy-right text-center wow animate__animated animate__slow animate__bounceInDown">
+                        <h4>&copy; 2021 All rights reserved by <a href="#"> Themebea.</a></h4>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</section>
+    </section>
     <!-- =====================================================
     |   |   |   |   |  copyright part end |  |     |   |  
 ==============================================================-->
+
+
+    <!--=============================================
+        |   |   |   bottom to top button part start |    |   |   
+    =================================================-->
+    <section id="bottom-top">
+        <div class="bottom-to-top">
+            <i class="fa-solid fa-angles-up btt-icon"></i>
+        </div>
+    </section>
+    <!--=============================================
+            |   |   |   bottom to top button part end |    |   |   
+        =================================================-->
 
 
 
